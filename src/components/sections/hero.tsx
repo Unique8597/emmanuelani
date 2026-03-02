@@ -6,18 +6,18 @@ import { FileText, ArrowDown } from "lucide-react";
 export default function Hero() {
   return (
     <section id="hero" className="py-20 md:py-32 bg-secondary/50">
-      <div className="container grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+      <div className="container px-6 md:px-8 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
-          <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tight text-primary">
-            Emmanuel Ani
+          <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tight text-primary mb-2">
+            Jane Doe
           </h1>
-          <p className="mt-2 font-headline text-2xl md:text-3xl font-medium text-foreground/80">
-            Data Scientist & ML Engineer
+          <p className="font-headline text-2xl md:text-3xl font-medium text-foreground/80">
+            Data Scientist & AI Enthusiast
           </p>
-          <p className="mt-6 max-w-xl text-lg text-muted-foreground">
+          <p className="mt-6 max-w-xl text-lg text-muted-foreground leading-relaxed">
             Transforming complex data into actionable insights. Passionate about machine learning, data visualization, and building intelligent applications.
           </p>
-          <div className="mt-8 flex flex-wrap justify-center md:justify-start gap-4">
+          <div className="mt-10 flex flex-wrap justify-center md:justify-start gap-4">
             <Button size="lg" asChild>
               <Link href="#projects">
                 View Projects
@@ -25,7 +25,7 @@ export default function Hero() {
               </Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <Link href="/Resume.pdf" target="_blank">
+              <Link href="/resume.pdf" target="_blank">
                 <FileText className="mr-2 h-5 w-5" />
                 Download CV
               </Link>
